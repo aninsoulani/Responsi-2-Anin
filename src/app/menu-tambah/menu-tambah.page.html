@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  <ion-buttons slot="start">
+  <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title>Tambah Menu</ion-title>
+  </ion-toolbar>
+ </ion-header>
+ <ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  <ion-toolbar>
+  <ion-title size="large">
+  Tambah Menu
+  </ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-list lines="full">
+  <ion-item>
+  <ion-label position="floating">Nama Menu</ion-label>
+  <ion-input required [(ngModel)]="nama_menu" placeholder="Masukkan Nama Menu" type="text">
+  </ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label position="floating">Kategori</ion-label>
+  <ion-input required [(ngModel)]="kategori" placeholder="Masukkan Kategori" type="text">
+  </ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label position="floating">Harga</ion-label>
+  <ion-input required [(ngModel)]="harga" placeholder="Masukkan harga" type="text">
+  </ion-input>
+  </ion-item>
+  <ion-row>
+  <ion-col>
+  <ion-button type="button" (click)="addMenu()" color="primary" shape="full" expand="block">Tambah Menu
+  </ion-button>
+  </ion-col>
+  </ion-row>
+  </ion-list>
+ </ion-content> 
