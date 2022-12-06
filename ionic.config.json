@@ -1,0 +1,7 @@
+{
+  "name": "crudresponsi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
